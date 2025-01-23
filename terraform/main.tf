@@ -13,6 +13,7 @@ module "RG" {
 }
 module "SA" {
   source   = "./modules/StorageAccount"
+  depends_on = [ module.RG ]
   sname    = var.sname
   rgname   = var.rgname
   location = var.location
