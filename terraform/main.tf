@@ -1,5 +1,5 @@
 terraform {
-   backend "azurerm" {
+  backend "azurerm" {
     resource_group_name  = "myrg"
     storage_account_name = "kadirstorage25"
     container_name       = "vm-container"
