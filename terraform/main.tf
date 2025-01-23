@@ -12,9 +12,9 @@ module "RG" {
   location = var.location
 }
 module "SA" {
-  source   = "./modules/StorageAccount"
-  depends_on = [ module.RG ]
-  sname    = var.sname
-  rgname   = var.rgname
-  location = var.location
+  source     = "./modules/StorageAccount"
+  depends_on = [module.RG]
+  sname      = var.sname
+  rgname     = var.rgname
+  location   = var.location
 }
